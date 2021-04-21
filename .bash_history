@@ -127,3 +127,37 @@ ls
 ]#./ngrok http 8080
 #./ngrok http 8080
 ngrok http 8080
+ls
+ls -a
+cd add .
+sudo service jenkins start
+sudo service jenkins status
+yum update -y
+sudo yum update -y
+sudo yum install -y docker nginx git
+usermod -a -G docker jenkins
+sudo usermod -a -G docker jenkins
+service docker start
+sudo service docker start
+service jenkins start
+sudo service nginx start
+chkconfig docker on
+sudo chkconfig docker on
+sudo chkconfig jenkins on
+sudo -su jenkins
+git add .
+git commit -m "second attempt at adding docker"
+git push origin master
+ls -a
+sudo yum update -y
+sudo amazon-linux-extras install docker
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+docker info
+docker images
+docker login
+aws ecr create-repository --repository-name hello-docker
+aws configure
+aws ecr create-repository --repository-name hello-docker --region us-east-2
+aws configure
+aws ecr create-repository --repository-name hello-docker --region us-east-2
